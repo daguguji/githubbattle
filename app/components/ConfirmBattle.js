@@ -1,24 +1,14 @@
 import React, {Component, PropTypes} from 'react'
 
-class Puck extends Component {
-  constructor(props){
-    super(props)
-  }
-  render() {
-    return (
-      <pre>
-        {JSON.stringify(this.props.data, null, ' ')}
-      </pre>
-    );
-  }
+function Puck(props) {
+  return <pre>{JSON.stringify(props, null, ' ')}</pre>
 }
-
 
 class ConfirmBattle extends Component {
   render() {
-    return this.props.isLoading === true 
+    return this.props.isLoading === true
       ? <p>Loading</p>
-      : <div><Puck data={this.props} /></div>
+      : <div>{Puck(this.props)}</div>
   }
 }
 
