@@ -1,9 +1,9 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component, PropTypes} from 'react'
 import {transparentBg} from '../styles'
 
 class Prompt extends Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
   render() {
     return (
@@ -20,7 +20,7 @@ class Prompt extends Component {
           </form>
         </div>
       </div>
-    );
+    )
   }
 }
 
@@ -29,6 +29,6 @@ Prompt.propTypes = {
   onSubmitUser: PropTypes.func.isRequired,
   username: PropTypes.string.isRequired,
   onUpdateUser: PropTypes.func.isRequired
-};
+}
 
-export default Prompt;
+export default Prompt

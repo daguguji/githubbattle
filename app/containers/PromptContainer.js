@@ -3,7 +3,7 @@ import Prompt from '../components/Prompt'
 
 class PromptContainer extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = { username: '' }
   }
   handleUpdateUser(e) {
