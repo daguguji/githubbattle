@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import Main from '../components/Main'
 import PromptContainer from '../containers/PromptContainer'
 import ConfirmBattleContainer from '../containers/ConfirmBattleContainer'
+import ResultsContainer from '../containers/ResultsContainer'
 
 const routes = (
   <Router history={hashHistory}>
@@ -12,6 +13,7 @@ const routes = (
       <Route path='playerOne' header='player one' component={PromptContainer} />
       <Route path='playerTwo/:playerOne' header='player two' component={PromptContainer} />
       <Route path='battle' component={ConfirmBattleContainer} />
+      <Route path='results' component={ResultsContainer} />
     </Route>
   </Router>
 )

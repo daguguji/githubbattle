@@ -23,16 +23,22 @@ function ConfirmBattle(props) {
         </UserDetailsWrapper>
       </div>
       <div className="col-sm-8 col-sm-offset-2">
-        <Link to='/playerOne'>
-          <button className="btn btn-lg btn-danger" style={space}>Reselect User</button>
-        </Link>
+        <div className="col-sm-12">
+          <button onClick={props.onInitiateBattle} className="btn btn-lg btn-success" style={space}>Initiate Battle</button>
+        </div>
+        <div className="col-sm-12">
+          <Link to='/playerOne'>
+            <button className="btn btn-lg btn-danger" style={space}>Reselect User</button>
+          </Link>
+        </div>
       </div>
     </div>
 }
 
 ConfirmBattle.propTypes = {
   isLoading: PropTypes.bool.isRequired,
-  playersInfo: PropTypes.array.isRequired
+  playersInfo: PropTypes.array.isRequired,
+  onInitiateBattle: PropTypes.func.isRequired
 }
 
 export default ConfirmBattle
