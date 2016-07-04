@@ -3,10 +3,11 @@ import { Link } from 'react-router'
 import UserDetailsWrapper from './UserDetailsWrapper'
 import UserDetails from './UserDetails'
 import { transparentBg, space } from '../styles'
+import Loading from './Loading'
 
 const ConfirmBattle = (props) => {
   return props.isLoading === true
-    ? <p>Loading</p>
+    ? <Loading text={'wait a monment'} speed={500} />
     : 
     <div className="jumbotron col-sm-12 text-center" style={transparentBg}>
       <h1>Confirm Battle</h1>

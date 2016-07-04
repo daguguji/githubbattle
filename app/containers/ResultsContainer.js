@@ -12,12 +12,12 @@ class ResultsContainer extends Component {
   }
   componentDidMount() {
     battle(this.props.location.state.playersInfo)
-      .then(function (scores) {
+      .then((scores) => {
         this.setState({
           scores: scores,
           isLoading: false
         })
-      }.bind(this))
+      })
   }
   render() {
     return (

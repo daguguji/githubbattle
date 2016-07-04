@@ -3,6 +3,7 @@ import {Link} from 'react-router'
 import UserDetails from './UserDetails'
 import UserDetailsWrapper from './UserDetailsWrapper'
 import { transparentBg, space } from '../styles' 
+import Loading from './Loading'
 
 const StartOver = (props) => {
   return (
@@ -25,7 +26,7 @@ const Tie = (props) => {
 
 const Results = (props) => {
   if (props.isLoading === true) {
-    return <p>Loading</p>
+    return <Loading text={'Coming'} />
   }
 
   if (props.scores[0] === props.scores[1]) {
