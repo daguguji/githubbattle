@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 import {transparentBg} from '../styles'
 
-function Prompt(props) {
+const Prompt = (props) => {
   return (
       <div className="jumbotron col-sm-8 col-sm-offset-2 text-center" style={transparentBg}>
         <h1>{props.header}</h1>

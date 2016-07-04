@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-function Main(props) {
+const Main = (props) => {
   return (
     <div className="main-container">
       {props.children}

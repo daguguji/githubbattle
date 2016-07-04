@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {Link} from 'react-router'
 import {transparentBg} from '../styles'
 
-function Home() {
+const Home = () => {
   return (
     <div className="jumbotron text-center col-sm-8 col-sm-offset-2" style={transparentBg}>
       <Link to='/playerOne'>

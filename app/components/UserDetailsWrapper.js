@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
-function UserDetailsWrapper(props) {
+const UserDetailsWrapper = (props) => {
   return (
     <div className="col-sm-6">
       <h3>{props.header}</h3>

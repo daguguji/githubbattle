@@ -4,7 +4,7 @@ import UserDetails from './UserDetails'
 import UserDetailsWrapper from './UserDetailsWrapper'
 import { transparentBg, space } from '../styles' 
 
-function StartOver(props) {
+const StartOver = (props) => {
   return (
     <div className="col-sm-12">
       <Link to='/playerOne'>
@@ -14,7 +14,7 @@ function StartOver(props) {
   )
 }
 
-function Tie(props) {
+const Tie = (props) => {
   return (
     <div className="col-sm-8 col-sm-offset-2 text-center">
       <h1>It is Tie</h1>Score: {props.score}
@@ -23,7 +23,7 @@ function Tie(props) {
   )
 }
 
-function Results(props) {
+const Results = (props) => {
   if (props.isLoading === true) {
     return <p>Loading</p>
   }

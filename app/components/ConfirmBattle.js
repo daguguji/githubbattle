@@ -4,11 +4,7 @@ import UserDetailsWrapper from './UserDetailsWrapper'
 import UserDetails from './UserDetails'
 import { transparentBg, space } from '../styles'
 
-function Puck(props) {
-  return <pre>{JSON.stringify(props, null, ' ') }</pre>
-}
-
-function ConfirmBattle(props) {
+const ConfirmBattle = (props) => {
   return props.isLoading === true
     ? <p>Loading</p>
     : 
