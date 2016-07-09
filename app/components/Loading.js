@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
-class componentName extends Component {
+class Loading extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,13 +32,13 @@ class componentName extends Component {
     );
   }
 }
-componentName.defaultProps = {
+Loading.defaultProps = {
   text: 'Loading',
   speed: 300
 } 
-componentName.propTypes = {
+Loading.propTypes = {
   text: PropTypes.string,
   speed: PropTypes.number
 };
 
-export default componentName;
+export default Loading;
