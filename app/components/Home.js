@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="jumbotron text-center col-sm-8 col-sm-offset-2" style={transparentBg}>
       <Link to='/playerOne'>
-        <button className="btn btn-lg btn-success">Start Battle</button>
+        <button className="btn btn-lg btn-success">{'Start Battle'}</button>
       </Link>
     </div>
   )
